@@ -1,6 +1,6 @@
 import '../css/main.css'
 import 'flowbite';
-import { sayHello } from "./important";
+import htmx from 'htmx.org';
 
-console.log("Hello from Vite!!");
-sayHello("Shadd's Portfolio")
+// Make HTMX globally accessible
+window.htmx = htmx

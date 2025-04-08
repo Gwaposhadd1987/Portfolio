@@ -2,7 +2,11 @@
 
 {% block content %}
 Hello
-<button class="btn btn-primary">Primary</button>
+<button class="btn btn-primary"
+    id="click"
+    hx-get="{% url 'index' %}"
+    hx-select="#click"
+    hx-swap="outerHTML">Default</button>
 
 
 
