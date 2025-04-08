@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Gwaposhadd1987/Portfolio#readme",
   "description": "",
   "devDependencies": {
+    "daisyui": "^5.0.16",
     "vite": "^6.2.5"
   },
   "dependencies": {
