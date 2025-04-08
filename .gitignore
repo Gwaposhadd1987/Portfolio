@@ -1,5 +1,7 @@
 # ignore vendor static files
-src/staticfiles/vendors
+/staticfiles/
+/node_modules/
+
 
 # ignore local static root cdn --> i.e.  SaaS/local-cdn
 local-cdn/

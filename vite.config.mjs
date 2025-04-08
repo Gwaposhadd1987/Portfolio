@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
     base: "/static/",
@@ -9,8 +10,12 @@ export default defineConfig({
       assetsDir: "django-assets",
       rollupOptions: {
         input: {
-          test: resolve('./static/js/main.js')
+          test: resolve('static/js/main.js')
         }
       }
-    }
-  })
+    },
+    plugins: [
+      tailwindcss()
+    ]
+  }
+)
