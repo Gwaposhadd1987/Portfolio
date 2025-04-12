@@ -2,17 +2,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% vite_hmr_client %}
-    {% vite_asset 'static/js/main.js' %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% vite_hmr_client %} {% vite_asset 'static/js/main.js' %}
     <title>Portfolio</title>
-</head>
-<body class="p-12 text-4x1">
-    <div class="m-12">
-        {% block content %}
-        {% endblock content %}
-    </div>
-</body>
+     {% include 'snippets/navbar.html' %}
+  </head>
+  <body>
+    <div>{% block content %} {% endblock content %}</div>
+  </body>
+  <footer>
+    {% include 'snippets/footer.html' %}
+  </footer>
 </html>
